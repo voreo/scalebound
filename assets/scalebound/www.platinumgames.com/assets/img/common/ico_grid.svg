@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #686868;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="ico_grid" class="cls-1" d="M725,2847h6v4h-6v-4Zm8,0h6v4h-6v-4Zm8,0h6v4h-6v-4Zm-16,6h6v4h-6v-4Zm8,0h6v4h-6v-4Zm8,0h6v4h-6v-4Zm-16,6h6v4h-6v-4Zm8,0h6v4h-6v-4Zm8,0h6v4h-6v-4Z" transform="translate(-725 -2847)"/>
+</svg>

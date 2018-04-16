@@ -1,0 +1,215 @@
+@charset "UTF-8";
+
+.magazine-content {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+.magazine-content .alignright {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+.magazine-content .alignleft {
+  float: left;
+  margin: 1em 0 1em 0;
+}
+.magazine-content a {
+  text-decoration: underline;
+}
+.magazine-content a:hover {
+  text-decoration: none;
+}
+.magazine-content h1,
+.magazine-content h2,
+.magazine-content h3,
+.magazine-content h4,
+.magazine-content h5,
+.magazine-content h6 {
+  clear: both;
+  font-weight: bold;
+  margin-bottom: 0.6em;
+  line-height: 1.4;
+}
+.magazine-content h1 {
+  font-size: 22px;
+  font-size: 2.2rem;
+}
+.magazine-content h2 {
+  font-size: 20px;
+  font-size: 2rem;
+}
+.magazine-content h3 {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+.magazine-content h4 {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+.magazine-content h5 {
+  font-size: 15px;
+  font-size: 1.5rem;
+}
+.magazine-content h6 {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+.magazine-content ul,
+.magazine-content ol {
+  line-height: 1.5;
+}
+.magazine-content ul {
+  margin-left: 1.5em;
+}
+.magazine-content ol {
+  margin-left: 1.5em;
+}
+.magazine-content ul li {
+  list-style: disc outside;
+  margin-bottom: 0.4em;
+}
+.magazine-content ol li {
+  list-style: decimal outside;
+  margin-bottom: 0.4em;
+}
+.magazine-content blockquote {
+  padding: 2.2em 2.0em;
+  border: 1px solid #e0e0e0;
+  line-height: 1.6;
+}
+.magazine-content blockquote *:last-child {
+  margin-bottom: 0;
+}
+.magazine-content blockquote:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.magazine-content img {
+  display: block;
+  margin: 0.5em auto;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+}
+.magazine-content p {
+  clear: both;
+  margin-bottom: 2em;
+  line-height: 1.9;
+}
+.magazine-content ul,
+.magazine-content ol,
+.magazine-content dl,
+.magazine-content blockquote {
+  clear: both;
+  margin-bottom: 1.4em;
+}
+.magazine-content hr {
+  margin: 2em 0;
+}
+.magazine-content table {
+  width: 100%;
+}
+.magazine-content table th,
+.magazine-content table td {
+  margin: auto;
+  padding: auto;
+}
+.magazine-content table td *:last-child {
+  margin-bottom: 0;
+}
+
+/* 一般的な線が入ったテーブル */
+.magazine-content table.border th,
+.magazine-content table.border td {
+  border: 1px solid #e0e0e0;
+}
+/* 表の縦線が消えたテーブル（横線のみ残したもの） */
+.magazine-content table.border-horizontal th,
+.magazine-content table.border-horizontal td {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+/* 線が消えたテーブル */
+.magazine-content table.border-none th,
+.magazine-content table.border-none td {
+  border: none;
+}
+
+.magazine-content .m-table-flow {
+  margin: 1em 0;
+}
+.magazine-content .m-table-flow caption {
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+.magazine-content .m-table-flow th,
+.magazine-content .m-table-flow td {
+  vertical-align: top;
+}
+.magazine-content .m-table-flow th {
+  width: 9em;
+}
+.magazine-content .m-table-flow td *:last-child {
+  margin-bottom: 0;
+}
+.magazine-content .wp-caption {
+  max-width: 100%;
+  height: auto;
+}
+.magazine-content .wp-caption-text {
+  font-size: 17px;
+  font-size: 1.7rem;
+  line-height: 1.5;
+}
+.magazine-content iframe {
+  width: 100%;
+}
+.magazine-content .note {
+  margin-bottom: 1.6em;
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 1140px) {
+  .magazine-content {
+    padding: 0 3.75000%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .magazine-content {
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+  .magazine-content h1 {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+  .magazine-content h2 {
+    font-size: 15px;
+    font-size: 1.5rem;
+  }
+  .magazine-content h3 {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+  .magazine-content h4 {
+    font-size: 13px;
+    font-size: 1.3rem;
+  }
+  .magazine-content h5 {
+    font-size: 12px;
+    font-size: 1.2rem;
+  }
+  .magazine-content h6 {
+    font-size: 11px;
+    font-size: 1.1rem;
+  }
+  .magazine-content .wp-caption-text {
+    font-size: 11px;
+    font-size: 1.1rem;
+  }
+  .magazine-content .note {
+    font-size: 11px;
+    font-size: 1.1rem;
+  }
+}
+.magazine-content > :last-child {
+  margin-bottom: 0;
+}

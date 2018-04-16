@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+
+<!-- Mirrored from www.platinumgames.com/official-blog/games/scalebound/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Jan 2017 13:20:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+    <title>Scalebound | PlatinumGames Official Blog</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="The official website of game developer PlatinumGames Inc. Scalebound, Star Fox Zero and NieR: Automata coming soon!">
+    <meta name="viewport" content="width=device-width">
+
+    <meta property="og:title" content="Scalebound | PlatinumGames Official Blog">
+    <meta property="og:site_name" content="PlatinumGames Official Blog">
+    <meta property="og:app_id" content="247798685260496">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="..">
+    <meta property="og:image" content="https://www.platinumgames.com/assets/img/ogp.jpg">
+    <meta property="og:description" content="The official website of game developer PlatinumGames Inc. Scalebound, Star Fox Zero and NieR: Automata coming soon!">
+    <meta name="twitter:title" content="Scalebound &#8211; PlatinumGames Official Blog">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="apple-touch-icon" sizes="57x57" href="../../../assets/icon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../../../assets/icon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../../../assets/icon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../../../assets/icon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../../../assets/icon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../../assets/icon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../../../assets/icon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../../assets/icon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/icon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="../../../assets/icon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="../../../assets/icon/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="../../../assets/icon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="../../../assets/icon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="../../../assets/icon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="../../../assets/icon/manifest.json">
+    <link rel="mask-icon" href="../../../assets/icon/safari-pinned-tab.svg" color="#737373">
+    <link rel="shortcut icon" href="../../../assets/icon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/assets/icon/mstile-144x144.png">
+    <meta name="msapplication-config" content="/assets/icon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <link type="text/css" rel="stylesheet" href="../../../assets/css/layout30f4.css?v=3">
+    <link type="text/css" rel="stylesheet" href="../../../assets/css/parts30f4.css?v=3">
+  <link type="text/css" rel="stylesheet" href="../../../assets/css/module/magazine-single30f4.css?v=3">
+    <script src="../../../../use.typekit.net/civ0iij.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+<link rel="alternate" type="application/rss+xml" title="PlatinumGames Official Blog &raquo; フィード" href="../../../../../www.platinumgames.com/official-blog/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="PlatinumGames Official Blog &raquo; コメントフィード" href="../../../../../www.platinumgames.com/official-blog/comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="PlatinumGames Official Blog &raquo; Scalebound カテゴリーのフィード" href="../../../../../www.platinumgames.com/official-blog/games/scalebound/feed/index.html" />
+<link rel='stylesheet' id='av-styles-css'  href='../../../../../www.platinumgames.com/official-blog/wp-content/plugins/age-verify/includes/assets/styles4235.css?ver=4.4.5' type='text/css' media='all' />
+
+		<style type="text/css">
+
+			#av-overlay-wrap {
+				background: #e6e6e6;
+			}
+
+			#av-overlay {
+				background: #fff;
+			}
+
+		</style>
+
+		</head>
+
+<body class="archive category category-scalebound category-10 page-magazine page-magazine-single site-official-blog">
+    <div id="wrapper" class="l-wrapper">
+        <!-- updated : 2017/01/11 22:20:19 -->
+
+        <div class="gnav">
+            <h1 class="site-logo"><a href="https://www.platinumgames.com/">PlatinumGames<svg version="1.1" class="ico-logo nav-ico" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 57.4 25.6" style="enable-background:new 0 0 57.4 25.6;" xml:space="preserve"><g><g><g><path class="st0" d="M32.2,12H4.7C1.5,12,0,13.4,0,16.6v9h8.8v-9c0-1.8,0.8-2.7,2.7-2.7h14c1.9,0,2.7,0.8,2.7,2.7c0,1.8-0.8,2.7-2.7,2.7l-13.3,0v1.9h20.1c3.3,0,4.7-1.5,4.7-4.6C37,13.4,35.5,12,32.2,12z"/><polygon class="st0" points="43.5,5.8 42.2,0 40.9,5.8 26.3,7.1 40.9,8.5 42.2,14.6 43.5,8.5 57.4,7.1"/></g></g></g></svg></a></h1>
+            <nav class="gnav-options">
+                <div class="gnav-body">
+                  <ul class="gnav-primary-options">
+                      <li class="gnav-options__games"><a href="https://www.platinumgames.com/games/" class="js-gnav-item">GAMES<svg version="1.1" class="ico-games nav-ico" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 43.6 39.6" style="enable-background:new 0 0 43.6 39.6;" xml:space="preserve"><g><path class="st0" d="M35.3,12.1V7.3h-7.8c-1.5,0-1.7-0.9-1.7-1.8V0h-5.9v4.9c0,0.4,0,0.9,0.4,1.3c0.5,0.5,5.4,5.4,5.4,5.4c0.4,0.4,0.9,0.5,1.5,0.5L35.3,12.1z"/><path class="st0" d="M10.4,7.3v4.8h7.8c1.5,0,1.7,0.9,1.7,1.8v5.5h5.9v-4.9c0-0.4,0-0.9-0.4-1.3C24.9,12.7,20,7.8,20,7.8c-0.4-0.4-0.9-0.5-1.5-0.5L10.4,7.3z"/></g><g><path class="st0" d="M4.9,31.2c0.2,0.1,0.3,0.2,0.3,0.4c0,0.2-0.2,0.4-0.4,0.4c-0.1,0-0.2,0-0.3-0.1c-0.4-0.2-0.9-0.4-1.5-0.4c-1.3,0-2.1,0.8-2.1,2.1v3c0,1.3,0.8,2.1,2.1,2.1c0.5,0,1.2-0.1,1.6-0.3v-2.8H3.2c-0.2,0-0.4-0.2-0.4-0.4c0-0.2,0.2-0.4,0.4-0.4h1.7c0.3,0,0.5,0.2,0.5,0.5v3.3c0,0.2-0.1,0.4-0.3,0.5c-0.6,0.2-1.4,0.4-2.2,0.4c-1.8,0-3-1.1-3-2.9v-2.9c0-1.9,1.1-2.9,3-2.9C3.6,30.8,4.3,31,4.9,31.2z"/><path class="st0" d="M12.5,31.1l2.7,7.9c0,0.1,0,0.1,0,0.2c0,0.2-0.2,0.4-0.4,0.4c-0.2,0-0.3-0.1-0.4-0.3l-0.7-2.1h-3.3l-0.7,2.1c-0.1,0.2-0.2,0.3-0.4,0.3c-0.2,0-0.4-0.2-0.4-0.4c0,0,0-0.1,0-0.2l2.7-7.9c0.1-0.2,0.3-0.3,0.5-0.3C12.2,30.8,12.4,30.9,12.5,31.1z M10.6,36.4h2.8L12,32L10.6,36.4z"/><path class="st0" d="M26,31.2v7.9c0,0.2-0.2,0.4-0.4,0.4s-0.4-0.2-0.4-0.4v-6.6L22.8,37c-0.1,0.1-0.2,0.2-0.4,0.2c-0.2,0-0.3-0.1-0.4-0.2l-2.3-4.4v6.6c0,0.2-0.2,0.4-0.4,0.4c-0.2,0-0.4-0.2-0.4-0.4v-7.9c0-0.3,0.2-0.5,0.5-0.5c0.2,0,0.4,0.1,0.5,0.3l2.7,5l2.7-5c0.1-0.2,0.2-0.3,0.4-0.3C25.8,30.8,26,30.9,26,31.2z"/><path class="st0" d="M34.6,30.9c0.2,0,0.4,0.2,0.4,0.4c0,0.2-0.2,0.4-0.4,0.4h-3.3v2.9h3.2c0.2,0,0.4,0.2,0.4,0.4s-0.2,0.4-0.4,0.4h-3.2v3.2h3.4c0.2,0,0.4,0.2,0.4,0.4c0,0.2-0.2,0.4-0.4,0.4H31c-0.3,0-0.5-0.2-0.5-0.5v-7.5c0-0.3,0.2-0.5,0.5-0.5H34.6z"/><path class="st0" d="M43.2,31.2c0.2,0.1,0.2,0.2,0.2,0.4c0,0.2-0.2,0.4-0.4,0.4c-0.1,0-0.2,0-0.4-0.1c-0.6-0.2-1-0.3-1.6-0.3c-0.9,0-1.6,0.6-1.6,1.3s0.4,1.1,1.1,1.4L42,35c0.8,0.4,1.7,0.9,1.7,2.3c0,1.4-1.2,2.3-2.6,2.3c-0.8,0-1.5-0.2-2.2-0.5c-0.2-0.1-0.3-0.2-0.3-0.4c0-0.2,0.2-0.4,0.4-0.4c0.1,0,0.2,0,0.4,0.1c0.5,0.2,1,0.4,1.7,0.4c1,0,1.7-0.5,1.7-1.5c0-0.9-0.5-1.2-1.3-1.6L40.1,35c-0.9-0.4-1.5-1-1.5-2.1c0-1.2,1-2.1,2.5-2.1C41.9,30.8,42.6,30.9,43.2,31.2z"/></g></svg></a>
+                        <div class="gnav-secondary-options js-gnav-secondary-options">
+                          <ul class="gnav-secondary-options-inner">
+    <li class="nav-game-scalebound"><a href="../../../games/scalebound/index.html" style="background-image: url(../../wp-content/uploads/2016/03/menu_sb.jpg);"><span class="game-title"><span class="jp">SCALEBOUND</span></span></a></li>
+    </ul>
+</div>
+                      </li>
+                    </ul>
+                </div>
+            </nav><!-- /.gnav-options-->
+
+            <nav class="gnav-links">
+                
+            </nav>
+            <div class="nav-toggle">
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+            </div>
+
+            <div class="star js-star"></div>
+        </div><!-- /.gnav -->
+        
+
+        <div id="main" class="l-main">
+            <div class="l-content">
+                <div class="m-media-container js-media-container cf">
+<article class="m-media type-normal js-media">
+    <a class="cf"href="../../article/8495.html">
+        <figure class="image" style="background-image: url(../../wp-content/uploads/sites/2/2016/06/Scalebound_E32016_02_Thuban-Roar-1-552x344.jpg);">        </figure>
+        <div class="text-block">
+            <h1 class="title en">Scalebound at the Xbox E3 Briefing 2016</h1>
+            <ul class="meta">
+                <li class="date">2016.06.14</li>
+            </ul>
+        </div>
+    </a>
+</article>
+<article class="m-media type-normal js-media">
+    <a class="cf"href="../../article/7622.html">
+        <figure class="image" style="background-image: url(../../wp-content/uploads/sites/2/2016/01/tunmb_sb.jpg);">        </figure>
+        <div class="text-block">
+            <h1 class="title en">An Update from the Scalebound Team</h1>
+            <ul class="meta">
+                <li class="date">2016.01.04</li>
+            </ul>
+        </div>
+    </a>
+</article>
+<article class="m-media type-normal js-media">
+    <a class="cf"href="../../article/7534.html">
+        <figure class="image" style="background-image: url(../../wp-content/uploads/sites/2/2015/08/scalebound_gamescom2015_01-552x344.png);">        </figure>
+        <div class="text-block">
+            <h1 class="title en">Scalebound!</h1>
+            <ul class="meta">
+                <li class="date">2015.09.11</li>
+            </ul>
+        </div>
+    </a>
+</article>
+<article class="m-media type-normal js-media">
+    <a class="cf"href="../../article/6494.html">
+        <figure class="image" style="background-image: url(../../wp-content/uploads/sites/2/2014/06/sb_02-552x344.jpg);">        </figure>
+        <div class="text-block">
+            <h1 class="title en">PlatinumGames and Microsoft Announce Scalebound!</h1>
+            <ul class="meta">
+                <li class="date">2014.06.10</li>
+            </ul>
+        </div>
+    </a>
+</article>
+</div><!-- /.m-media-container -->
+            </div><!-- /.l-content -->
+        </div><!-- /#main -->
+
+    </div><!-- /#wrapper -->
+
+    <footer id="site-footer" class="l-site-footer">
+        <nav class="site-footer-nav"> </nav>
+        <p class="copyright"><small>Copyright&copy; platinumgames inc.</small></p>
+    </footer>
+
+    <div class="back-to-top js-back-to-top"><a href="#wrapper" class="scroll"><svg version="1.1" class="ico-back-to-top" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 90 90" style="enable-background:new 0 0 90 90;" xml:space="preserve"><rect x="13.2" y="13.2" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -18.6404 45.0018)" class="st0" width="63.6" height="63.6"/><polygon class="st1" points="58.7,43.9 45,30.2 31.3,43.9 30.6,43.3 45,28.9 59.4,43.3 "/></svg></a></div>
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-73144217-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script src="../../../assets/js/lib30f4.js?v=3"></script>
+    <script src="../../../assets/js/utility30f4.js?v=3"></script>
+    <script src="../../../assets/js/common30f4.js?v=3"></script>
+<script src="../../../assets/js/lib/jquery-ias.min.js"></script>
+<script src="../../../assets/js/module/magazine-blog-top.js"></script>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"5d839b5e64","applicationID":"15851598","transactionName":"YQNRbEZZWEIFW0ELDFhJcltAUVlfS1FbBgZO","queueTime":0,"applicationTime":178,"atts":"TURSGg5DS0w=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+<!-- Mirrored from www.platinumgames.com/official-blog/games/scalebound/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Jan 2017 13:20:51 GMT -->
+</html>
